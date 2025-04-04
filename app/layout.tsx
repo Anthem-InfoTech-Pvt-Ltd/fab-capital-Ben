@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'FabCaptial',
+  description: 'FabCapital is a fintech company that provides a range of financial services to businesses and consumers.',
+  generator: 'FabCapital',
 }
 
 export default function RootLayout({
