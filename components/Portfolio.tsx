@@ -52,9 +52,9 @@ const companies = [
     investmentDate: "2016",
     website: "https://www.perchcapital.co.uk/",
     stats: [
-      { label: "Recoverable Debt", value: "1B", icon: PoundSterling },
-      { label: "Expected Remaining Debt", value: "400M+", icon: BarChart },
-      { label: "Employees", value: "300+", icon: Users },
+      { label: "Debt Purchased", value: "1B+", icon: PoundSterling },
+      { label: "Expected Renaming Collections", value: "400M+", icon: BarChart },
+      { label: "Employees", value: "400+", icon: Users },
     ],
     status: "live",
     managingDirector: {
@@ -76,7 +76,7 @@ const companies = [
     stats: [
       { label: "Hosted Users", value: "1M+", icon: Users },
       { label: "ARR", value: "2.5M+", icon: BarChart },
-      { label: "Annual Payments", value: "5M+", icon: PoundSterling },
+      { label: "Annual Payments Processed", value: "750M", icon: PoundSterling },
     ],
     status: "live",
     managingDirector: {
@@ -158,7 +158,7 @@ const companies = [
     investmentDate: "2009",
     exitDate: "2016",
     exitValue: "£100M-£250M",
-    website: "https://www.oplo.com",
+    // website: "https://www.oplo.com",
     status: "exited",
   },
   {
@@ -168,7 +168,7 @@ const companies = [
     investmentDate: "2022",
     exitDate: "2024",
     exitValue: "£1M-£5M",
-    website: "https://www.loopmoney.com",
+    // website: "https://www.loopmoney.com",
     status: "exited",
   },
   {
@@ -235,7 +235,7 @@ export default function Portfolio() {
     return company.status === filter
   })
 
-  const getStatusDetails = (status, launched = false) => {
+  const getStatusDetails = (status: string, launched = false) => {
     if (launched) {
       return {
         label: "LAUNCHED",
@@ -288,15 +288,16 @@ export default function Portfolio() {
   }
 
   // Helper function to determine if a value needs a pound symbol
-  const needsPoundSymbol = (label) => {
+  const needsPoundSymbol = (label: string) => {
     const financialLabels = [
       "ARR",
       "Funding",
       "Balance Sheet",
       "Recoverable Debt",
       "Expected Remaining Debt",
-      "Annual Payments",
+      // "Annual Payments",
       "Property GDV",
+      "Debt Purchased",
     ]
     return financialLabels.some((term) => label.includes(term))
   }
