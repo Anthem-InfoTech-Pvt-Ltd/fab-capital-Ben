@@ -14,7 +14,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FabCaptial-3STJd9jFiylT4CcynkeGW6J241RKaU.png"
+              src="/FabCapital.png"
               alt="FabCapital Investments"
               className="h-32 md:h-36"
             />

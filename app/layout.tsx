@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'FabCaptial',
+  title: 'FabCapital',
   description: 'FabCapital is a fintech company that provides a range of financial services to businesses and consumers.',
   generator: 'FabCapital',
 }

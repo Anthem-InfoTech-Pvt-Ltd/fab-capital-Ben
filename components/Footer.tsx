@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2 md:col-span-1">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/FabCaptial-3STJd9jFiylT4CcynkeGW6J241RKaU.png"
+              src="/FabCapital.png"
               alt="FabCapital Investments"
               className="h-32 md:h-36 mb-6 brightness-0 invert"
             />
