@@ -15,7 +15,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <FounderProfile />
-      <AccreditationsScroll />
+    <AccreditationsScroll />
       <Portfolio />
       <InvestmentStrategy />
       <InvestorCTA />

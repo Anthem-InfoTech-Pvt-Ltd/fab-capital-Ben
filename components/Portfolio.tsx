@@ -107,16 +107,58 @@ const companies = [
       linkedinUrl: "https://www.linkedin.com/in/jake-francis-a778b412a/",
     },
   },
+  
   {
-    name: "Clear Companies",
+    name: "Clearwater Fishery",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clearwater%20fishery.jpg-uG4PJAz1XWuKajYW9CougpWe4B8gu2.jpeg",
-    description: "Lancashire based property investments across Leisure, Commercial and Residential",
+    description: "The North Wests Premier carp and course fishery",
     investmentDate: "2016",
     website: "https://www.gocatch.fish/profile/0f49a352-b002-4950-a64e-5e6e24f12b34",
     stats: [
       { label: "Locations", value: "4", icon: Building },
-      { label: "Property GDV", value: "7M+", icon: PoundSterling },
+      { label: "Property GDV", value: "0.5", icon: PoundSterling },
+      { label: "Employees", value: "15", icon: Users },
+    ],
+    status: "live",
+    managingDirector: {
+      name: "Alex Mollart",
+      title: "CEO",
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/allex%20mollart-vibHeEStEAnaLwLgwKeA6Oib3fIok3.jpeg",
+      linkedinUrl: "https://www.linkedin.com/in/alex-mollart/",
+    },
+  },
+   {
+    name: "Clear Property NW with Debbie Waterman ",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clearwater%20fishery.jpg-uG4PJAz1XWuKajYW9CougpWe4B8gu2.jpeg",
+    description: "A mix of Residential and Commercial Development properties developed then sold",
+    investmentDate: "2018",
+    website: "",
+    stats: [
+      { label: "Locations", value: "4", icon: Building },
+      { label: "Property GDV", value: "10m+", icon: PoundSterling },
+      { label: "Employees", value: "15", icon: Users },
+    ],
+    status: "live",
+    managingDirector: {
+      name: "Alex Mollart",
+      title: "CEO",
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/allex%20mollart-vibHeEStEAnaLwLgwKeA6Oib3fIok3.jpeg",
+      linkedinUrl: "https://www.linkedin.com/in/alex-mollart/",
+    },
+  }, {
+    name: "Clear Advisory with Alex Mollart",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clearwater%20fishery.jpg-uG4PJAz1XWuKajYW9CougpWe4B8gu2.jpeg",
+    description: "Bespoke advisory services for businesses or founders looking to leverage Alex, his contacts and experience",
+    investmentDate: " 2025 ",
+    website: "",
+    stats: [
+      { label: "Locations", value: "4", icon: Building },
+      { label: "Property GDV", value: "0.5", icon: PoundSterling },
       { label: "Employees", value: "15", icon: Users },
     ],
     status: "live",
