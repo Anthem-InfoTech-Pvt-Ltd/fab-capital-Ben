@@ -7,6 +7,9 @@ import {
   PoundSterling,
   Users,
   Building,
+  FolderOpen,
+  FileText,
+  Map,
   BarChart,
   CheckCircle,
   XCircle,
@@ -109,16 +112,16 @@ const companies = [
   },
   
   {
-    name: "Clearwater Fishery",
+    name: "Clearwater Fisheries with Mike as Director",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clearwater%20fishery.jpg-uG4PJAz1XWuKajYW9CougpWe4B8gu2.jpeg",
     description: "The North Wests Premier carp and course fishery",
     investmentDate: "2016",
     website: "https://www.gocatch.fish/profile/0f49a352-b002-4950-a64e-5e6e24f12b34",
     stats: [
-      { label: "Locations", value: "4", icon: Building },
-      { label: "Property GDV", value: "0.5", icon: PoundSterling },
-      { label: "Employees", value: "15", icon: Users },
+      { label: "Followers", value: "15k", icon: Users },
+      { label: "Turnover", value: "0.5", icon: PoundSterling },
+      { label: "Land Size", value: "80", icon: Map},
     ],
     status: "live",
     managingDirector: {
@@ -137,9 +140,9 @@ const companies = [
     investmentDate: "2018",
     website: "",
     stats: [
-      { label: "Locations", value: "4", icon: Building },
-      { label: "Property GDV", value: "10m+", icon: PoundSterling },
-      { label: "Employees", value: "15", icon: Users },
+      { label: "Projects", value: "25+", icon:FolderOpen },
+      { label: "Turnover", value: "10m+", icon: PoundSterling },
+      { label: "Deployable Capital", value: "2m", icon: Users },
     ],
     status: "live",
     managingDirector: {
@@ -157,9 +160,9 @@ const companies = [
     investmentDate: " 2025 ",
     website: "",
     stats: [
-      { label: "Locations", value: "4", icon: Building },
-      { label: "Property GDV", value: "0.5", icon: PoundSterling },
-      { label: "Employees", value: "15", icon: Users },
+      { label: "Agreements",value: "Bespoke", icon: FileText },
+      { label: "Experience", value: "30 years", icon: Building },
+      { label: "Network", value: "CEO Network", icon: Users },
     ],
     status: "live",
     managingDirector: {
