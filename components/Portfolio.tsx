@@ -509,44 +509,45 @@ export default function Portfolio() {
                     {/* Spacer to push buttons to bottom */}
                     <div className="flex-grow"></div>
 
-                    {/* Website Link Button */}
-                    {(company.status === "live" || company.status === "exited") && (
-                      <div className="mt-4 grid grid-cols-2 gap-4">
-                        {company.website && (
-                          <motion.a
-                            href={company.website}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center justify-center py-2 px-4 rounded-lg border border-orange-200 text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300"
-                            whileHover={{ scale: 1.03 }}
-                            whileTap={{ scale: 0.97 }}
-                          >
-                            <Globe size={16} className="mr-2" />
-                            Visit Website
-                          </motion.a>
-                        )}
+                   {/* Website Link Button */}
+{(company.status === "live" || company.status === "exited") && (
+  <div className="mt-4 grid grid-cols-2 gap-4">
+    {company.website && (
+      <motion.a
+        href={company.website}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center py-2 px-4 rounded-lg border border-orange-200 text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300"
+        whileHover={{ scale: 1.03 }}
+        whileTap={{ scale: 0.97 }}
+      >
+        <Globe size={16} className="mr-2" />
+        Visit Website
+      </motion.a>
+    )}
 
-                        {company.status === "live" && company.managingDirector && (
-                          <motion.button
-                            onClick={() =>
-                              setSelectedMD({
-                                name: company.managingDirector.name,
-                                title: company.managingDirector.title,
-                                company: company.name,
-                                image: company.managingDirector.image,
-                                linkedinUrl: company.managingDirector.linkedinUrl,
-                              })
-                            }
-                            className="flex items-center justify-center py-2 px-4 rounded-lg border border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all duration-300"
-                            whileHover={{ scale: 1.03 }}
-                            whileTap={{ scale: 0.97 }}
-                          >
-                            <Linkedin size={16} className="mr-2" />
-                            Meet the Boss
-                          </motion.button>
-                        )}
-                      </div>
-                    )}
+    {company.status === "live" && company.managingDirector && (
+      <motion.button
+        onClick={() =>
+          setSelectedMD({
+            name: company.managingDirector.name,
+            title: company.managingDirector.title,
+            company: company.name,
+            image: company.managingDirector.image,
+            linkedinUrl: company.managingDirector.linkedinUrl,
+          })
+        }
+        className={`flex items-center justify-center py-2 px-4 rounded-lg border border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all duration-300
+          ${!company.website ? 'col-span-2' : ''}`}
+        whileHover={{ scale: 1.03 }}
+        whileTap={{ scale: 0.97 }}
+      >
+        <Linkedin size={16} className="mr-2" />
+        Meet the Boss
+      </motion.button>
+    )}
+  </div>
+)}
 
                     {/* Redesigned Exit Value for Exited Companies */}
                     {company.status === "exited" && company.exitValue && (
