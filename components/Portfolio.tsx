@@ -120,8 +120,8 @@ const companies = [
     website: "https://www.gocatch.fish/profile/0f49a352-b002-4950-a64e-5e6e24f12b34",
     stats: [
       { label: "Followers", value: "15k", icon: Users },
-      { label: "Turnover", value: "0.5", icon: PoundSterling },
-      { label: "Land Size", value: "80", icon: Map},
+      { label: "Turnover", value: "0.5M", icon: PoundSterling },
+      { label: "Land Size", value: "80 acres", icon: Map},
     ],
     status: "live",
     managingDirector: {
