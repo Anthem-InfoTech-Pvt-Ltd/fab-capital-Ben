@@ -115,7 +115,7 @@ const companies = [
     name: "Clearwater Fisheries with Mike as Director",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clearwater%20fishery.jpg-uG4PJAz1XWuKajYW9CougpWe4B8gu2.jpeg",
-    description: "The North Wests Premier carp and course fishery",
+    description: "The North Wests Premier carp and course fishery with 10 lakes over 50 acres managed by Michael Pennington",
     investmentDate: "2016",
     website: "https://www.gocatch.fish/profile/0f49a352-b002-4950-a64e-5e6e24f12b34",
     stats: [
@@ -141,7 +141,7 @@ const companies = [
     website: "",
     stats: [
       { label: "Projects", value: "25+", icon:FolderOpen },
-      { label: "Turnover", value: "10m+", icon: PoundSterling },
+      { label: "Turnover", value: "10m", icon: PoundSterling },
       { label: "Deployable Capital", value: "2m", icon: Users },
     ],
     status: "live",
