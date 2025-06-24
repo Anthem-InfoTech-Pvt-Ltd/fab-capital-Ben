@@ -17,6 +17,7 @@ import {
   Globe,
   Linkedin,
   TrendingUp,
+  Facebook,
 } from "lucide-react"
 import MDProfilePopup from "./MDProfilePopup"
 
@@ -110,18 +111,18 @@ const companies = [
       linkedinUrl: "https://www.linkedin.com/in/jake-francis-a778b412a/",
     },
   },
-  
+
   {
-    name: "Clearwater Fisheries with Mike as Director",
+    name: "Clearwater Fisheries",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clearwater%20fishery.jpg-uG4PJAz1XWuKajYW9CougpWe4B8gu2.jpeg",
-    description: "The North Wests Premier carp and course fishery",
+    description: "The North Wests Premier carp and course fishery with 10 lakes over 50 acres managed by Michael Pennington.",
     investmentDate: "2016",
     website: "https://www.gocatch.fish/profile/0f49a352-b002-4950-a64e-5e6e24f12b34",
     stats: [
       { label: "Followers", value: "15k", icon: Users },
       { label: "Turnover", value: "0.5m", icon: PoundSterling },
-      { label: "Land Size", value: "80 acres", icon: Map},
+      { label: "Land Size", value: "80 acres", icon: Map },
     ],
     status: "live",
     managingDirector: {
@@ -129,18 +130,18 @@ const companies = [
       title: "CEO",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/allex%20mollart-vibHeEStEAnaLwLgwKeA6Oib3fIok3.jpeg",
-      linkedinUrl: "https://www.linkedin.com/in/alex-mollart/",
+      linkedinUrl: "https://www.facebook.com/clearwaterfisheries",
     },
   },
-   {
-    name: "Clear Property NW with Debbie Waterman ",
+  {
+    name: "Clear Property NW",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clearwater%20fishery.jpg-uG4PJAz1XWuKajYW9CougpWe4B8gu2.jpeg",
+      "/property.png",
     description: "A mix of Residential and Commercial Development properties developed then sold",
     investmentDate: "2018",
     website: "",
     stats: [
-      { label: "Projects", value: "25+", icon:FolderOpen },
+      { label: "Projects", value: "25+", icon: FolderOpen },
       { label: "Turnover", value: "10m+", icon: PoundSterling },
       { label: "Deployable Capital", value: "2m", icon: Users },
     ],
@@ -150,17 +151,17 @@ const companies = [
       title: "CEO",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/allex%20mollart-vibHeEStEAnaLwLgwKeA6Oib3fIok3.jpeg",
-      linkedinUrl: "https://www.linkedin.com/in/alex-mollart/",
+      linkedinUrl: "https://www.linkedin.com/in/debbie-waterman-55a6aa14/",
     },
   }, {
-    name: "Clear Advisory with Alex Mollart",
+    name: "Clear Advisory",
     image:
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clearwater%20fishery.jpg-uG4PJAz1XWuKajYW9CougpWe4B8gu2.jpeg",
+      "/advisory.png",
     description: "Bespoke advisory services for businesses or founders looking to leverage Alex, his contacts and experience",
     investmentDate: " 2025 ",
     website: "",
     stats: [
-      { label: "Agreements",value: "Bespoke", icon: FileText },
+      { label: "Agreements", value: "Bespoke", icon: FileText },
       { label: "Experience", value: "30 years", icon: Building },
       { label: "Network", value: "CEO Network", icon: Users },
     ],
@@ -364,9 +365,8 @@ export default function Portfolio() {
           <div className="flex flex-wrap justify-center gap-4">
             <motion.button
               onClick={() => setFilter("all")}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === "all" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-              }`}
+              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${filter === "all" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -374,9 +374,8 @@ export default function Portfolio() {
             </motion.button>
             <motion.button
               onClick={() => setFilter("live")}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === "live" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-              }`}
+              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${filter === "live" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -384,9 +383,8 @@ export default function Portfolio() {
             </motion.button>
             <motion.button
               onClick={() => setFilter("exited")}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === "exited" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-              }`}
+              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${filter === "exited" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -394,9 +392,8 @@ export default function Portfolio() {
             </motion.button>
             <motion.button
               onClick={() => setFilter("closed")}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
-                filter === "closed" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-              }`}
+              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${filter === "closed" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -449,15 +446,14 @@ export default function Portfolio() {
                     <img
                       src={company.image || "/placeholder.svg"}
                       alt={company.name}
-                      className={`w-full h-full object-cover transition-all duration-500 ${
-                        company.status === "closed" ? "opacity-80 grayscale hover:grayscale-0 hover:opacity-100" : ""
-                      }`}
+                      className={`w-full h-full object-cover transition-all duration-500 ${company.status === "closed" ? "opacity-80 grayscale hover:grayscale-0 hover:opacity-100" : ""
+                        }`}
                     />
                   </div>
 
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-2xl font-bold mb-2">{company.name}</h3>
-                    <p className="text-gray-600 mb-4 line-clamp-2 h-[3rem] text-sm overflow-hidden">
+                    <p className="text-gray-600 mb-4 line-clamp-2 h-[3.7rem] text-sm overflow-hidden">
                       {company.description}
                     </p>
 
@@ -509,45 +505,71 @@ export default function Portfolio() {
                     {/* Spacer to push buttons to bottom */}
                     <div className="flex-grow"></div>
 
-                   {/* Website Link Button */}
-{(company.status === "live" || company.status === "exited") && (
-  <div className="mt-4 grid grid-cols-2 gap-4">
-    {company.website && (
-      <motion.a
-        href={company.website}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center justify-center py-2 px-4 rounded-lg border border-orange-200 text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300"
-        whileHover={{ scale: 1.03 }}
-        whileTap={{ scale: 0.97 }}
-      >
-        <Globe size={16} className="mr-2" />
-        Visit Website
-      </motion.a>
-    )}
+                    {/* Website Link Button */}
+                    {(company.status === "live" || company.status === "exited") && (
+                      <div className="mt-4 grid grid-cols-2 gap-4">
+                        {company.website && (
+                          <motion.a
+                            href={company.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center py-2 px-4 rounded-lg border border-orange-200 text-orange-500 hover:bg-orange-500 hover:text-white transition-all duration-300"
+                            whileHover={{ scale: 1.03 }}
+                            whileTap={{ scale: 0.97 }}
+                          >
+                            <Globe size={16} className="mr-2" />
+                            Visit Website
+                          </motion.a>
+                        )}
 
-    {company.status === "live" && company.managingDirector && (
-      <motion.button
-        onClick={() =>
-          setSelectedMD({
-            name: company.managingDirector.name,
-            title: company.managingDirector.title,
-            company: company.name,
-            image: company.managingDirector.image,
-            linkedinUrl: company.managingDirector.linkedinUrl,
-          })
-        }
-        className={`flex items-center justify-center py-2 px-4 rounded-lg border border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all duration-300
-          ${!company.website ? 'col-span-2' : ''}`}
-        whileHover={{ scale: 1.03 }}
-        whileTap={{ scale: 0.97 }}
-      >
-        <Linkedin size={16} className="mr-2" />
-        Meet the Boss
-      </motion.button>
-    )}
-  </div>
-)}
+                        {company.status === "live" && company.managingDirector && (
+                          company.name === "Clearwater Fisheries" ? (
+                            <motion.a
+                              href={company.managingDirector.linkedinUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={`flex items-center justify-center py-2 px-4 rounded-lg border border-[#3b5998] text-[#3b5998] hover:bg-[#3b5998] hover:text-white transition-all duration-300 ${!company.website ? 'col-span-2' : ''}`}
+                              whileHover={{ scale: 1.03 }}
+                              whileTap={{ scale: 0.97 }}
+                            >
+                              <Facebook size={16} className="mr-2" />
+                              Facebook
+                            </motion.a>
+                          ) : company.name === "Clear Property NW" ? (
+                            <motion.a
+                              href={company.managingDirector.linkedinUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className={`flex items-center justify-center py-2 px-4 rounded-lg border border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all duration-300 ${!company.website ? 'col-span-2' : ''}`}
+                              whileHover={{ scale: 1.03 }}
+                              whileTap={{ scale: 0.97 }}
+                            >
+                              <Linkedin size={16} className="mr-2" />
+                              Meet the Boss
+                            </motion.a>
+                          ) : (
+                            <motion.button
+                              onClick={() =>
+                                setSelectedMD({
+                                  name: company.managingDirector.name,
+                                  title: company.managingDirector.title,
+                                  company: company.name,
+                                  image: company.managingDirector.image,
+                                  linkedinUrl: company.managingDirector.linkedinUrl,
+                                })
+                              }
+                              className={`flex items-center justify-center py-2 px-4 rounded-lg border border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all duration-300
+                             ${!company.website ? 'col-span-2' : ''}`}
+                              whileHover={{ scale: 1.03 }}
+                              whileTap={{ scale: 0.97 }}
+                            >
+                              <Linkedin size={16} className="mr-2" />
+                              Meet the Boss
+                            </motion.button>
+                          )
+                        )}
+                      </div>
+                    )}
 
                     {/* Redesigned Exit Value for Exited Companies */}
                     {company.status === "exited" && company.exitValue && (
@@ -588,5 +610,5 @@ export default function Portfolio() {
     </section>
   )
 }
-;<style jsx>{hidePoundIconStyle}</style>
+; <style jsx>{hidePoundIconStyle}</style>
 
