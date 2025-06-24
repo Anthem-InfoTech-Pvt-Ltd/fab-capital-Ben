@@ -141,8 +141,8 @@ const companies = [
     investmentDate: "2018",
     website: "",
     stats: [
-      { label: "Projects", value: "25+", icon: FolderOpen },
-      { label: "Turnover", value: "10m+", icon: PoundSterling },
+      { label: "Projects", value: "25+", icon:FolderOpen },
+      { label: "Turnover", value: "10+", icon: PoundSterling },
       { label: "Deployable Capital", value: "2m", icon: Users },
     ],
     status: "live",
