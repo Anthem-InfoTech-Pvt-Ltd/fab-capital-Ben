@@ -137,7 +137,7 @@ const companies = [
     name: "Clear Property NW",
     image:
       "/property.png",
-    description: "A mix of Residential and Commercial Development properties developed then sold",
+    description: "A mix of Residential and Commercial Development properties developed then sold.",
     investmentDate: "2018",
     website: "",
     stats: [
