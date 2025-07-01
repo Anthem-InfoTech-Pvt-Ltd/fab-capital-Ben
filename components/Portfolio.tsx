@@ -151,7 +151,7 @@ const companies = [
       title: "CEO",
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/allex%20mollart-vibHeEStEAnaLwLgwKeA6Oib3fIok3.jpeg",
-      linkedinUrl: "https://www.linkedin.com/in/debbie-waterman-55a6aa14/",
+      linkedinUrl: "https://www.linkedin.com/in/alex-mollart/",
     },
   }, {
     name: "Clear Advisory",
@@ -176,10 +176,10 @@ const companies = [
   },
   {
     name: "Raffily",
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/raffily.jpg-sXedsMV0wiGAhCkkQYyKtRAd1qIOyP.jpeg",
+    image: "/Raffily.png",
     description: "A brand new LaaS (Loyalty as a service) platform helping brands engage better with their audiences",
     investmentDate: "2024",
-    website: "https://www.raffilycorporate.co.uk",
+    website: "https://www.rewardlabs.co.uk/",
     stats: [
       { label: "Customers", value: "TBC", icon: Users },
       { label: "ARR", value: "TBC", icon: BarChart },
@@ -265,7 +265,7 @@ const companies = [
     status: "closed",
   },
   {
-    name: "1st Stop Group",
+    name: "1st Stop Finance",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1st%20stop.jpg-xRyVUPeFHCV2VGbXvkXX0i4z1oi8F8.jpeg",
     description: "Financial services and lending solutions provider.",
     status: "closed",
@@ -535,19 +535,7 @@ export default function Portfolio() {
                               <Facebook size={16} className="mr-2" />
                               Facebook
                             </motion.a>
-                          ) : company.name === "Clear Property NW" ? (
-                            <motion.a
-                              href={company.managingDirector.linkedinUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className={`flex items-center justify-center py-2 px-4 rounded-lg border border-[#0A66C2] text-[#0A66C2] hover:bg-[#0A66C2] hover:text-white transition-all duration-300 ${!company.website ? 'col-span-2' : ''}`}
-                              whileHover={{ scale: 1.03 }}
-                              whileTap={{ scale: 0.97 }}
-                            >
-                              <Linkedin size={16} className="mr-2" />
-                              Meet the Boss
-                            </motion.a>
-                          ) : (
+                          ) :  (
                             <motion.button
                               onClick={() =>
                                 setSelectedMD({
