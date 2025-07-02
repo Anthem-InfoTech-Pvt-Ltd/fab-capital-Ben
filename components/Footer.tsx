@@ -61,7 +61,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Connect</h3>
             <a
-              href="https://linkedin.com"
+              href=" https://www.linkedin.com/company/fab-capital/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-gray-400 hover:text-white transition-colors"

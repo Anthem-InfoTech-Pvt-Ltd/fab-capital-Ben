@@ -130,7 +130,7 @@ export default function ContactForm() {
                   <div>
                     <h3 className="font-semibold mb-1">Connect</h3>
                     <a
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/company/fab-capital/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-orange-500 hover:text-orange-600 transition-colors"
