@@ -23,21 +23,21 @@ export default function Hero() {
               Backing the builders, not the dreamers entrepreneurs.
             </h2>
 
-           <p className="text-gray-600  mb-3 leading-relaxed">
+           <p className="text-gray-600  mb-3 leading-relaxed text-justify">
               FabCapital was founded on a simple belief: big ideas usually start small.</p>
-              <p className="text-gray-600 mb-3  leading-relaxed">
+              <p className="text-gray-600 mb-3  leading-relaxed text-justify">
               After three decades of building and leading businesses, FabCap founder Alex Mollart saw that
               the best entrepreneurs often start as intrapreneurs. They know their industry inside out,
               have seen the problems first hand and are ready to build something better.
            </p>
 
 
-         <p className="text-gray-600 mb-3  leading-relaxed">
+         <p className="text-gray-600 mb-3  leading-relaxed text-justify">
             FabCapital exists to back those people – the builders, not the dreamers – with independent
             capital, a network that delivers and the straight-talking support they need to turn real-world
             knowledge into real businesses.
        </p>
-       <p className="text-gray-600 mb-3  leading-relaxed">
+       <p className="text-gray-600 mb-3  leading-relaxed text-justify">
             We invest in founders solving real problems, executing fast and building sustainable
             businesses, not hype.
           </p>

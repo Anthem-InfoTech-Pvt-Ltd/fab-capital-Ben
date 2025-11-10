@@ -88,7 +88,7 @@ export default function ContactForm() {
                 <h2 className="text-2xl font-bold mb-2">Alex Mollart</h2>
                 <p className="text-orange-500 font-medium mb-4">Founder & CEO</p>
                 <p className="text-gray-600 mb-6">
-                  With over 20 years of experience in financial services and entrepreneurship, Alex leads our investment
+                  With over 30 years of experience in financial services and entrepreneurship, Alex leads our investment
                   strategy and works closely with portfolio companies to drive growth and innovation.
                 </p>
                 <a
