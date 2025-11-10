@@ -22,8 +22,11 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-800 hover:text-orange-500 font-medium transition-colors">
+             <Link href="/" className="text-gray-800 hover:text-orange-500 font-medium transition-colors">
               Home
+            </Link>
+            <Link href="/#founder-profile" className="text-gray-800 hover:text-orange-500 font-medium transition-colors">
+              About
             </Link>
             <Link href="/#portfolio" className="text-gray-800 hover:text-orange-500 font-medium transition-colors">
               Investments
@@ -32,7 +35,7 @@ export default function Navigation() {
               href="/contact"
               className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors"
             >
-              Contact
+              Pitch an Idea
             </Link>
           </div>
 
@@ -58,6 +61,13 @@ export default function Navigation() {
               >
                 Home
               </Link>
+               <Link
+                href="/#founder-profile"
+                className="text-gray-800 hover:text-orange-500 font-medium transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                About
+              </Link>
               <Link
                 href="/#portfolio"
                 className="text-gray-800 hover:text-orange-500 font-medium transition-colors"
@@ -70,7 +80,7 @@ export default function Navigation() {
                 className="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Contact
+                Pitch an Idea
               </Link>
             </div>
           </motion.div>

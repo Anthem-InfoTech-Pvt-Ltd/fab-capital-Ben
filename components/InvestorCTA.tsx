@@ -24,7 +24,7 @@ export default function InvestorCTA() {
             href="/contact"
             className="inline-block bg-white text-orange-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-50 transition-colors"
           >
-            Schedule a Consultation
+            Pitch  Your Idea
           </Link>
         </motion.div>
       </div>

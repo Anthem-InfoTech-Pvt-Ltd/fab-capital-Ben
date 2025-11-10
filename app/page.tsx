@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation"
 import Hero from "@/components/Hero"
+import LinkedInFeed from "@/components/LinkedInFeed"
 import Portfolio from "@/components/Portfolio"
 import InvestmentStrategy from "@/components/InvestmentStrategy"
 import InvestorCTA from "@/components/InvestorCTA"
@@ -15,6 +16,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <FounderProfile />
+      <LinkedInFeed/>
     <AccreditationsScroll />
       <Portfolio />
       <InvestmentStrategy />

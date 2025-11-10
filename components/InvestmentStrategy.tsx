@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Target, TrendingUp, Users, Building, Clock, PoundSterling } from "lucide-react"
+import { Target, TrendingUp, Users, Building, Clock, PoundSterling,Briefcase } from "lucide-react"
 
 const strategies = [
   {
@@ -31,6 +31,12 @@ const strategies = [
     description: "Extensive experience in founding and scaling businesses across various sectors.",
   },
   {
+    icon: Briefcase,
+    title: " 100% Commitment",
+    description:
+      "Dedicated to long-term partnerships, supporting businesses with strategic guidance and sustainable growth.",
+  },
+    {
     icon: Target,
     title: "Strategic Focus",
     description:
@@ -49,7 +55,7 @@ export default function InvestmentStrategy() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Our Track Record</h2>
+          <h2 className="text-3xl font-bold mb-4">Our Track Record</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Three decades of experience in building and scaling successful businesses
           </p>

@@ -45,7 +45,7 @@ export default function AccreditationsScroll() {
     <section className="py-12 bg-white border-y border-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold text-gray-900">Our Recognition</h2>
+          <h2 className="text-3xl font-bold ">Our Recognition</h2>
         </div>
 
         <div className="relative overflow-hidden">

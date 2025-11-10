@@ -349,7 +349,7 @@ export default function Portfolio() {
   }
 
   return (
-    <section id="portfolio" className="py-12 bg-gray-50">
+    <section id="portfolio" className="py-12 bg-gray-50 scroll-mt-20">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -358,7 +358,7 @@ export default function Portfolio() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl font-bold mb-4">Our Investments</h2>
+          <h2 className="text-3xl font-bold mb-4">Our Investments</h2>
           <p className="text-xl text-gray-600 mb-8">
             Partnering with innovative companies to drive growth and create value
           </p>

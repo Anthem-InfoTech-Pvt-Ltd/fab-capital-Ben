@@ -158,7 +158,7 @@ export default function ContactForm() {
               <div className="bg-white p-8 rounded-xl shadow-lg text-center">
                 <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
                 <h3 className="text-2xl font-bold mb-2">Thank You!</h3>
-                <p className="text-gray-600">Your message has been successfully sent. We'll get back to you shortly.</p>
+                <p className="text-gray-600">We review every opportunity personally. If it’s a fit, you’ll hear from us soon.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="bg-white p-8 rounded-xl shadow-lg">
