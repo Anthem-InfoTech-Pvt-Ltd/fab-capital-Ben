@@ -62,7 +62,7 @@ export default function FounderProfile() {
                 Today, Tandem is one of Blackpool’s biggest employers and a major contributor to the North West economy, something I’m immensely proud of as a Northern founder who believes deeply in the region’s untapped potential.
               </p>
               <p className="text-gray-600 mb-3 leading-relaxed text-justify">
-                After stepping back from corporate life, I knew I wanted to keep building, just differently. FabCapital was born from that desire: to work with like-minded people, ready to embark on their own entrepreneurial journey, sharing the highs and lows that inevitably follow. I wanted to back the next generation of builders.
+                After stepping back from corporate life, I knew I wanted to keep building, just differently. FabCap was born from that desire: to work with like-minded people, ready to embark on their own entrepreneurial journey, sharing the highs and lows that inevitably follow. I wanted to back the next generation of builders.
               </p>
               <p className="text-gray-600 leading-relaxed text-justify">
                 I’ve lived through booms, busts and everything in between and one thing’s clear — <strong>builders beat dreamers</strong>. Dreamers sometimes win big, but builders win more often. That’s why I back founders with real-world experience, solving real problems and giving it everything to build something that endures.
