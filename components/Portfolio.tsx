@@ -34,6 +34,7 @@ const companies = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tandem-e33DFANw0n8aloxC6I5vpv3tH4Jf10.png",
     description: "Helping Consumers transition to a lower carbon economy, whilst saving money along the way",
     investmentDate: "2022",
+    whyInvest: "Alex Mollart founder of 1St Stop/Oplo Group from 2004-2021 alongside Pollen street Capital believed merging Oplo into Tandem Bank would create an exciting new Green driven consumer banking proposition.This completed a journey for Alex from Intrapeneur in a UK lending Plc 1995-2004, too Entrepreneur at Oplo 2004-2021, to holding a corporate investment/shareholding in Tandem Bank today.",
     website: "https://www.tandem.co.uk/",
     stats: [
       { label: "Customers", value: "400K+", icon: Users },
@@ -54,6 +55,7 @@ const companies = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/perch.jpg-JxImigYG6wm3Ii1LX2YCNVUU85Vnvn.jpeg",
     description: "Helping Consumers manage their debt in an accessible and sustainable way",
     investmentDate: "2016",
+    whyInvest: "Criag Hinchliffe and the team had all reached C-Level roles at leading companies across Debt purchasing including Arrow Global andbefore startup debt up debt purchaser, Perch Group.With the incumbent industry jugganauts generally over leveraged and lacking capital to buy,Craig and team believed in building a new digital player(using Financial Cloud) without funding or system restraints. ",
     website: "https://www.perchcapital.co.uk/",
     stats: [
       { label: "Debt Purchased", value: "1B+", icon: PoundSterling },
@@ -76,6 +78,7 @@ const companies = [
     description:
       "A flexible and scalable SaaS FS&Banking platform. The Salesforce of Financial Services, simply better!",
     investmentDate: "2018",
+    whyInvest:"Cloud – Kyle and Grant had worked for a large Debt purchase and collection business for over 10 years. Uniquely they understood the industry and how legacy technology holds a business back. They had the vision to build a Finanical services SaaS platform from the ground up in an industry they truely understood. A great example of Builders not Dreamers.",
     website: "https://www.financial-cloud.com/",
     stats: [
       { label: "Hosted Users", value: "1M+", icon: Users },
@@ -96,6 +99,7 @@ const companies = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/redkite.jpg-pqY9Ddgogj4p2wd2sQstILzzvOikJk.jpeg",
     description: "Funding Regional Developers improve their communities, housing and commercial property",
     investmentDate: "2023",
+    whyInvest:"Jake and Lee are a great example of what FabCap looks for. Two founders with a solid career to Director level in Property lendingat Shawbrook Bank keen to start on their own, switching from Intrapeneurs to Entrepreneurs supported with capital and experience from FabCap.. ",
     website: "https://redkite-lending.co.uk/",
     stats: [
       { label: "Funding", value: "25M+", icon: PoundSterling },
@@ -141,7 +145,7 @@ const companies = [
     investmentDate: "2018",
     website: "",
     stats: [
-      { label: "Projects", value: "25+", icon:FolderOpen },
+      { label: "Projects", value: "25+", icon: FolderOpen },
       { label: "Realisations ", value: "10m+", icon: PoundSterling },
       { label: "Deployable Capital", value: "2m", icon: Users },
     ],
@@ -179,6 +183,7 @@ const companies = [
     image: "/Raffily.png",
     description: "A brand new LaaS (Loyalty as a service) platform helping brands engage better with their audiences",
     investmentDate: "2024",
+    whyInvest:"Ben Govier had led the sales teams of Deal Monster building a direct to consumer discount marketing retail offering across the UK. His vision is to modernise and digitise traditional ways brands engage with their prospective and existing customers.",
     website: "https://www.rewardlabs.co.uk/",
     stats: [
       { label: "Customers", value: "TBC", icon: Users },
@@ -453,26 +458,28 @@ export default function Portfolio() {
 
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-2xl font-bold mb-2">{company.name}</h3>
-                    <p className="text-gray-600 mb-4 line-clamp-2 h-[3.7rem] text-sm overflow-hidden">
+                    <p className="text-gray-600 mb-0 leading-tight line-clamp-2 h-[3.7rem] text-sm overflow-hidden">
                       {company.description}
                     </p>
 
                     {/* Investment Date */}
                     {company.investmentDate && (
-                      <div className="flex flex-wrap items-center text-sm text-gray-500 mb-4 gap-4">
+                      <div className="flex flex-wrap items-center text-sm text-gray-500 mb-2 gap-2">
                         <div className="flex items-center">
                           <Calendar size={16} className="mr-2" />
                           <span>Investment: {company.investmentDate}</span>
                         </div>
 
                         {company.exitDate && (
-                          <div className="flex items-center bg-orange-50 px-2 py-1 rounded">
+                          <div className="flex items-center bg-orange-50 px-2 Why we invest: rounded">
                             <Calendar size={16} className="mr-2 text-orange-500" />
                             <span className="font-medium">Exit: {company.exitDate}</span>
                           </div>
                         )}
                       </div>
                     )}
+                    
+                    {company.whyInvest &&(<p className="text-sm text-gray-600 mb-4 gap-4"><b>Why We Invested:</b>  {company.whyInvest}</p>)}
 
                     {/* Stats for Live Companies */}
                     {company.status === "live" && company.stats && (
@@ -535,7 +542,7 @@ export default function Portfolio() {
                               <Facebook size={16} className="mr-2" />
                               Facebook
                             </motion.a>
-                          ) :  (
+                          ) : (
                             <motion.button
                               onClick={() =>
                                 setSelectedMD({
