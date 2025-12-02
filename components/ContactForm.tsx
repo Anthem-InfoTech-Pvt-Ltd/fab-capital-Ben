@@ -18,37 +18,73 @@ export default function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [error, setError] = useState("")
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-    setError("")
 
-    // Simulating an API call
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 2000)) // 2 second delay
-      // If the API call is successful:
-      setIsSubmitted(true)
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        company: "",
-        type: "Investor",
-        message: "",
-      })
-    } catch (err) {
-      setError("There was an error submitting your form. Please try again.")
-    } finally {
-      setIsSubmitting(false)
+ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+  setError("");
+
+  try {
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    if (!res.ok) {
+      throw new Error("Failed to send email");
     }
-  }
 
+    setIsSubmitted(true);
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      company: "",
+      type: "Investor",
+      message: "",
+    });
+  } catch (err) {
+    setError("There was an error submitting your form. Please try again.");
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
+  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     })
   }
+
+
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault()
+  //   setIsSubmitting(true)
+  //   setError("")
+
+  //   // Simulating an API call
+  //   try {
+  //     await new Promise((resolve) => setTimeout(resolve, 2000)) // 2 second delay
+  //     // If the API call is successful:
+  //     setIsSubmitted(true)
+  //     setFormData({
+  //       name: "",
+  //       email: "",
+  //       phone: "",
+  //       company: "",
+  //       type: "Investor",
+  //       message: "",
+  //     })
+  //   } catch (err) {
+  //     setError("There was an error submitting your form. Please try again.")
+  //   } finally {
+  //     setIsSubmitting(false)
+  //   }
+  // }
 
   return (
     <section className="min-h-screen pt-20">
