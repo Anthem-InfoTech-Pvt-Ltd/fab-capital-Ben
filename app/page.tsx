@@ -16,11 +16,11 @@ export default function Home() {
       <GlobalStyles />
       <Navigation />
       <Hero />
-      <HNWInvestor />
-      <FounderProfile />
-      <LinkedInFeed/>
-    <AccreditationsScroll />
+      <AccreditationsScroll />
       <Portfolio />
+      <FounderProfile />
+      <HNWInvestor />
+      <LinkedInFeed />
       <InvestmentStrategy />
       <InvestorCTA />
       <Footer />
