@@ -139,6 +139,29 @@ const companies = [
     },
   },
   {
+    name: "Saber Renewables",
+    image:
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%2813%29-vPdMV0EseFtNK7KlPe9q7k58M0YkIV.jpg",
+    description: "Solar contract installations through Power Purchase Agreements, backed by Pollen Street Capital's £300m facility.",
+    investmentDate: "2026",
+    investmentAmount: "£2,500,000",
+    whyInvest: "Dave Wills the founder and CEO had built a 200m pipeline of solar contract installations in the form of Power Purchase Agreements. After working with a big four accountancy firm, FabCap was approached for support on raising a debt line and an investment for working capital. FabCap was able to bring Pollen Street Capital in for 300m facility and injected £2.5m in equity.",
+    website: "https://saberrenewables.com/",
+    stats: [
+      { label: "Solar Hours", value: "1M+", icon: BarChart },
+      { label: "ARR", value: "2.5M+", icon: PoundSterling },
+      { label: "Light Bulbs Powered", value: "80,000", icon: TrendingUp },
+    ],
+    status: "live",
+    managingDirector: {
+      name: "David Wills",
+      title: "CEO",
+      image:
+        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/allex%20mollart-vibHeEStEAnaLwLgwKeA6Oib3fIok3.jpeg",
+      linkedinUrl: "https://www.linkedin.com/in/david-wills-1a8198170/",
+    },
+  },
+  {
     name: "Clear Property NW",
     image:
       "/property.png",
