@@ -122,6 +122,7 @@ const companies = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/clearwater%20fishery.jpg-uG4PJAz1XWuKajYW9CougpWe4B8gu2.jpeg",
     description: "The North Wests Premier carp and course fishery with 10 lakes over 50 acres managed by Michael Pennington.",
     investmentDate: "2016",
+    whyInvest: "As Michael Pennington's reputation grew, it became clear that the North West lacked a premier, large-scale destination that combined elite angling with professional management. This insight drove the acquisition of the 50-acre Carnforth site, transforming raw land into a diverse 10-lake complex. By scaling the facility's infrastructure, we have created a high-yield leisure asset where the increasing valuation of the land and fishing stock allows for consistent reinvestment, ensuring the site remains the region's leading fishery while funding future expansions.",
     website: "https://www.gocatch.fish/profile/0f49a352-b002-4950-a64e-5e6e24f12b34",
     stats: [
       { label: "Followers", value: "15k", icon: Users },
