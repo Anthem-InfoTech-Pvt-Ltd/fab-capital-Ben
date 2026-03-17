@@ -143,6 +143,7 @@ const companies = [
       "/property.png",
     description: "A mix of Residential and Commercial Development properties developed then sold.",
     investmentDate: "2018",
+    whyInvest: "As Alex's businesses grew it seemed sensible to own the properties his companies operated from rather than owning them. This simple logic started a wider journey of identifying properties that can be purchased, converted and leased, creating equity which can be refinanced into the next opportunity building a growing portfolio of buildings financed from the same initial investment made in 2016.",
     website: "",
     stats: [
       { label: "Projects", value: "25+", icon: FolderOpen },
