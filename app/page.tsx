@@ -17,9 +17,9 @@ export default function Home() {
       <Navigation />
       <Hero />
       <AccreditationsScroll />
-      <Portfolio />
       <FounderProfile />
       <HNWInvestor />
+      <Portfolio />
       <LinkedInFeed />
       <InvestmentStrategy />
       <InvestorCTA />
