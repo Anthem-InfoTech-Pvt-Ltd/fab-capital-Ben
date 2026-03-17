@@ -8,6 +8,7 @@ import Footer from "@/components/Footer"
 import FounderProfile from "@/components/FounderProfile"
 import AccreditationsScroll from "@/components/AccreditationsScroll"
 import GlobalStyles from "@/components/GlobalStyles"
+import HNWInvestor from "@/components/HNWInvestor"
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <GlobalStyles />
       <Navigation />
       <Hero />
+      <HNWInvestor />
       <FounderProfile />
       <LinkedInFeed/>
     <AccreditationsScroll />
