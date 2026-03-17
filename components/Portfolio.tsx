@@ -506,6 +506,9 @@ export default function Portfolio() {
                     
                     {company.whyInvest &&(<p className="text-sm text-gray-600 mb-4 gap-4 text-justify"><b>Why We Invested:</b>  {company.whyInvest}</p>)}
 
+                    {/* Spacer to push stats and buttons to bottom */}
+                    <div className="flex-grow"></div>
+
                     {/* Stats for Live Companies */}
                     {company.status === "live" && company.stats && (
                       <motion.div
@@ -533,9 +536,6 @@ export default function Portfolio() {
                         ))}
                       </motion.div>
                     )}
-
-                    {/* Spacer to push buttons to bottom */}
-                    <div className="flex-grow"></div>
 
                     {/* Website Link Button */}
                     {(company.status === "live" || company.status === "exited") && (
