@@ -139,13 +139,13 @@ const companies = [
     },
   },
   {
-    name: "Saber Renewables",
+    name: "SRE Capital",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%2813%29-vPdMV0EseFtNK7KlPe9q7k58M0YkIV.jpg",
     description: "Solar contract installations through Power Purchase Agreements, backed by Pollen Street Capital's £300m facility.",
     investmentDate: "2026",
     investmentAmount: "£2,500,000",
-    whyInvest: "Dave Wills the founder and CEO had built a 200m pipeline of solar contract installations in the form of Power Purchase Agreements. After working with a big four accountancy firm, FabCap was approached for support on raising a debt line and an investment for working capital. FabCap was able to bring Pollen Street Capital in for 300m facility and injected £2.5m in equity.",
+    whyInvest: "Dave Wills the founder and CEO had built a 200m pipeline of solar contract installations in the form of Power Purchase Agreements. After working with a big four accountancy firm, FabCap was approached for support on raising a debt line and an investment for working capital. FabCap was able to bring Pollen Street Capital in for 300m facility and injected equity for working capital.",
     website: "https://saberrenewables.com/",
     stats: [
       { label: "Solar Hours", value: "1M+", icon: BarChart },
@@ -307,6 +307,8 @@ export default function Portfolio() {
   const [selectedMD, setSelectedMD] = useState(null)
 
   const filteredCompanies = companies.filter((company) => {
+    // Hide closed companies entirely
+    if (company.status === "closed") return false
     if (filter === "all") return true
     return company.status === filter
   })
@@ -419,15 +421,6 @@ export default function Portfolio() {
               whileTap={{ scale: 0.95 }}
             >
               Exited Investments
-            </motion.button>
-            <motion.button
-              onClick={() => setFilter("closed")}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${filter === "closed" ? "bg-orange-500 text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"
-                }`}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Closed Investments
             </motion.button>
           </div>
         </motion.div>
